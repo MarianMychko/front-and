@@ -1,0 +1,258 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: 'Indie Flower', cursive;
+    font-variation-settings: 'wght' 600;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* border-right: 1px solid #000; */
+    /* border-left: 1px solid #000; */
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.header {
+    height: 75px;
+    background: -webkit-linear-gradient(to right, #8f91eb,#000dc0);
+    background: linear-gradient(to right, #8f91eb,#000dc0);
+    box-shadow: 0 0 30px 0 #0408f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header-logo {
+    width: 35%;
+    color: #000;
+    /* background-color: pink; */
+}
+
+.logo-link {
+    font-size: 45px;
+    color: #ececec;
+    text-decoration: none;
+}
+
+.header-menu {
+    width: 50%;
+    /* background-color: deeppink; */
+}
+
+
+.menu-link {
+    font-size: 25px;
+    color: #ececec;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-property: transform;
+    transition-duration: 0.7s;
+}
+
+.menu-link:hover {
+    transform: rotate(-360deg);
+}
+
+.section {
+    height: 100vh;
+    padding-top: 60px;
+}
+
+#home {
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.home-title {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    color:#ffffff;
+    text-shadow: 2px 2px #0408f5;
+    text-align: center;
+    line-height: 70px;
+}
+
+
+#about {
+    background-color: #fefefe;
+}
+
+.about-photo:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+/* .about-photo {
+    width: 30%;
+    height: 70vh;
+    background: #1d06e9;
+    fallback for old browsers
+    background: -webkit-linear-gradient(to right, #0408f5, #11991c);
+    Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #0408f5, #11991c);
+    W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+} */
+
+
+
+.about-info{
+    width: 45%;
+}
+
+.about-info p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.about-icons{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 70px;
+}
+
+.fab{
+    opacity: 0.5;
+    transition-property: transform, opacity, color;
+    transition-duration: 0.7s;
+    
+}
+
+.fa-code-branch{
+    color: #f70404;
+}
+
+.fa-file-code{
+    color: #1608db;
+    
+}
+
+.fa-terminal{
+    color: #91ff00;
+}
+
+.fa-code{
+    color: #6503e6;
+}
+
+.fas:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+#works {
+    background-image: url('../images/4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.works-box{
+    width: 30%;
+    height: 200px;
+    border: 3px solid #252525;
+    border-radius: 90px 10px;
+    background: -webkit-linear-gradient(to right, #0408f5, #ffffff);
+    background: linear-gradient(to right, #0408f5, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0.5;
+    transition-property: transform, opacity;
+    transition-duration: 0.7s;
+    text-transform: uppercase;
+}
+
+.works-box:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: 1;
+
+}
+
+#contact {
+    background: -webkit-linear-gradient(to right, #0408f5, #ffffff);
+    background: linear-gradient(to right, #0408f5, #ffffff);
+}
+
+.contact-info{
+    width: 30%;
+}
+
+.contact-info p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea{
+    margin-bottom: 10px;
+    border: 20px double dotted#252525;
+    padding: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color: #0503a0;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    font-family: 'Indie Flower', cursive;
+    font-variation-settings: 'wght' 200;
+}
+
+.form-button{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    border: 20px double dotted#252525;
+    background-color: #340beb;
+    color: #252525;
+    font-family: 'JetBrains Mono', monospace;
+    font-variation-settings: 'wght' 700;
+    transition-property: background-color, color;
+    transition-duration: 0.7s;
+}
+
+.form-button:hover{
+    background-color: #252525;
+    color: #fefefe;
+}
+

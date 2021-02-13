@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container d-flex">
+            <div class="header-logo">
+                <a href="#home" class="logo-link">My first code</a>
+            </div>
+            <nav class="header-menu d-flex">
+                <a href="#about" class="menu-link">about</a>
+                <a href="#works" class="menu-link">works</a>
+                <a href="#contact" class="menu-link">contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section" id="home">
+            <div class="container">
+                <h1 class="home-title">
+                    Want to be<br> Frontend Developer</h1>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="container d-flex">
+                <div class="about-photo">
+                    <img src="../Task_2/images/js.jpg" alt="">
+                </div>
+                <div class="about-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde porro voluptatum exercitationem corrupti, vel esse quam accusamus maiores eos at assumenda culpa optio ad dolores. Ad nostrum voluptate nisi.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde porro voluptatum exercitationem corrupti, vel esse quam accusamus maiores eos at assumenda culpa optio ad dolores. Ad nostrum voluptate nisi.</p>
+                    <div class="about-icons">
+                        <i class="fas fa-file-code"></i>
+                        <i class="fas fa-code"></i>
+                        <i class="fas fa-terminal"></i>
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="works">
+            <div class="container d-flex f-wrap">
+                <div class="works-box">html</div>
+                <div class="works-box">css</div>
+                <div class="works-box">java script</div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <div class="container d-flex">
+                <div class="contact-info">
+                    <p>Email: front@gmail.com</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="">Name: </label>
+                            <input type="text" placeholder="name here..">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email: </label>
+                            <input type="email" placeholder="email here..">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Message: </label>
+                            <textarea cols="30" rows="10" placeholder="message here.."></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Send</button>
+                    </form>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bv_5Zv5c-Ts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
